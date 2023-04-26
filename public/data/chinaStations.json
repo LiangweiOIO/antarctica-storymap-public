@@ -1,0 +1,62 @@
+[
+    {
+        "lat": -62.2,
+        "lon": -59.0,
+        "name": "长城站",
+        "Location": "King George Island",
+        "Country": "China",
+        "Year_est": "1985",
+        "type": "Permanent active stations",
+        "max_Pop": 60,
+        "Mean_annual_temp": "-2.5",
+        "description": "长城站建成于1985年2月20日， 位于西南极洲南设得兰群岛乔治王岛南部（62°13'S,58°58'W）站区平均海拔高度10米，距北京17501.949千米。长城站现已初具规模, 有各种建筑25座，建筑面积4200平方米，各种运输工具17台, 除先进的通信设备、舒适的生活条件外，还拥有较为完善的 学实验室，配备有供科学研究使用的各种仪器设备。长城站每年可接纳越冬考察人员40名，度夏考察人员80名。（http://pole.whu.edu.cn/cn/gb_article.php?modid=03001）"
+    },
+    {
+        "lat": -69.4,
+        "lon": 76.4,
+        "name": "中山站",
+        "Location": "Larsemann Hills,\u00a0Prydz Bay",
+        "Country": "China",
+        "Year_est": "1989",
+        "type": "Permanent active stations",
+        "max_Pop": 60,
+        "Mean_annual_temp": "-11.2",
+        "description": "中山站建干1989年2月26日, 位于东南极大陆拉斯曼丘陵(69°22'24S,76°22'40E)，站区平均海拔高度11米, 距北京12553.160千米。中山站现已初具规模，有各种建筑15座，建筑面积2700平方米各种运输工具19台，除先进的通信设备、舒适的生活条件外，还拥有较为完备的科学实验室，配备有供科学研究使用的各种仪器设备。中山站每年可接纳越冬人员25名，度夏人员60名。"
+    },
+    {
+        "lat": -80.4,
+        "lon": 77.1,
+        "name": "昆仑站",
+        "Location": "Dome A",
+        "Country": "China",
+        "Year_est": "2009",
+        "type": "Summer-only active station",
+        "max_Pop": 26,
+        "Mean_annual_temp": "-51.4",
+        "description": "昆仑站于2009年1月27日在南极内陆冰盖的最高点冰穹A地区落成，目前建成的昆仑站主体建筑为钢结构，工程的建筑面积为236平方米，包括生活区和科研区，可供15至20人进行夏季科考。根据规划，3至5年后，昆仑站将逐步升级扩建到588.56平方米，成为满足科考人员越冬的常年站。以昆仑站为依托，我国将有计划地在南极内陆开展冰川学、天文学、地质学、地球物理学、大气科学、空间物理学等领域的科学研究。"
+    },
+    {
+        "lat": -73.8,
+        "lon": 77.0,
+        "name": "泰山站",
+        "Location": "Princess Elizabeth Land",
+        "Country": "China",
+        "Year_est": "2014",
+        "type": "Summer-only active station",
+        "max_Pop": 20,
+        "Mean_annual_temp": "-30.3",
+        "description": "中国南极泰山站是中国第二个南极内陆夏季考察站，建成于2014年2月8日。地理坐标为73°51′S，76°58′E，海拔高度2621米，距离中山站直线距离520公里，距离昆仑站距离715公里。夏季最高温度-9.2℃，冬季极端最低温度-60℃，年平均温度-35.3℃，年均风速10.9米/秒。"
+    },
+    {
+        "lat": -74.92,
+        "lon": 163.7,
+        "name": "罗斯海新站",
+        "Location": "",
+        "Country": "China",
+        "Year_est": "2014",
+        "type": "",
+        "max_Pop": -1,
+        "Mean_annual_temp": "",
+        "description": ""
+    }
+]

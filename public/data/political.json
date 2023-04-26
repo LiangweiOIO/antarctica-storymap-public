@@ -1,0 +1,74 @@
+[
+    {
+        "radius": 180,
+        "startAngle": 142.2,
+        "endAngle": 136.11,
+        "color": "#bcbdce",
+        "Claimant": "France",
+        "Date": 1840,
+        "area": 432000
+    },
+    {
+        "radius": 210,
+        "startAngle": -74,
+        "endAngle": -25,
+        "color": "#d8c59c",
+        "Claimant": "Argentina",
+        "Date": 1932,
+        "area": 1461597
+    },
+    {
+        "radius": 200,
+        "startAngle": 160,
+        "endAngle": 142.2,
+        "color": "#e8bd99",
+        "Claimant": "Australia",
+        "Date": 1933,
+        "area": 5896500
+    },
+    {
+        "radius": 170,
+        "startAngle": 136.11,
+        "endAngle": 44.38,
+        "color": "#e7d086",
+        "Claimant": "Australia",
+        "Date": 1933,
+        "area": 5896500
+    },
+    {
+        "radius": 190,
+        "startAngle": -80,
+        "endAngle": -20,
+        "color": "#b2c5c7",
+        "Claimant": "United Kingdom",
+        "Date": 1908,
+        "area": 1709400
+    },
+    {
+        "radius": 200,
+        "startAngle": -90,
+        "endAngle": -53,
+        "color": "#e8bd99",
+        "Claimant": "Chile",
+        "Date": 1940,
+        "area": 1250257.6
+    },
+    {
+        "radius": 185,
+        "startAngle": 44.38,
+        "endAngle": -20,
+        "color": "#bcbdce",
+        "Claimant": "Norway",
+        "Date": 1908,
+        "area": 2700000
+    },
+    {
+        "radius": 190,
+        "startAngle": 150,
+        "endAngle": 200,
+        "color": "#bcbdce",
+        "Claimant": "New Zealand",
+        "Date": 1923,
+        "area": 450000
+    }
+]

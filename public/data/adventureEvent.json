@@ -1,0 +1,164 @@
+[
+    {
+        "title": "James Cook",
+        "name": "詹姆斯·库克",
+        "date": "1773",
+        "sentence": "<mark>詹姆斯·库克（James Cook）</mark>船长和他的船员是最先进入南极的人。"
+    },
+    {
+        "title": "Bellingshausen",
+        "name": "别林斯高晋",
+        "date": "1820",
+        "sentence": "苏联探险家<mark>别林斯高晋（Bellingshausen）</mark>见到了一块位于南纬69°，西经2°的冰雪覆盖的陆地。据他描述，这块地“仿佛布满了许多小丘陵”。他非常幸运地成为了第一个见到南极大陆的人。",
+        "mapinfo": {
+            "center": [
+                -2,
+                -71
+            ],
+            "r": 4
+        }
+    },
+    {
+        "title": "Edward Bransfield",
+        "name": "爱德华·布兰斯菲尔德",
+        "date": "1820",
+        "sentence": "英国皇家海军派<mark>爱德华·布兰斯菲尔德（Edward Bransfield）</mark>前往南设得兰群岛继续寻找陆地。他是第一个见到南极半岛的人。",
+        "mapinfo": {
+            "center": [
+                -63,
+                -68
+            ],
+            "r": 4
+        }
+    },
+    {
+        "title": "John Davis",
+        "name": "约翰·戴维斯",
+        "date": "1821",
+        "sentence": "美国海豹狩猎者<mark>约·戴维斯（John Davis）</mark>可能是第一个登上南极大陆的人。"
+    },
+    {
+        "title": "James Clark Ross",
+        "name": "詹姆斯·克拉克·罗斯",
+        "date": "1841",
+        "sentence": "<mark>詹姆斯·克拉克·罗斯 （James Clark Ross）</mark>是穿越南极冰山区的第一人。"
+    },
+    {
+        "title": "",
+        "name": "亨利克·布尔",
+        "date": "1895",
+        "sentence": "<mark>享利克·布尔</mark>和同伴们从阿代尔角登上了南极大陆，这是人类在南极半岛之外的第一次登陆。他们还在近海岛屿上发现了地衣，这是南极圈内植物与真菌的第一次发现。",
+        "mapinfo": {
+            "center": [
+                170.23,
+                -71.28
+            ],
+            "r": 4
+        }
+    },
+    {
+        "title": "",
+        "name": "罗伯特·斯科特",
+        "date": "1902",
+        "sentence": "<mark>斯科特</mark>是首个乘坐氢气球飞越南极上空的人。"
+    },
+    {
+        "title": "Edgeworth David",
+        "name": "爱德华斯·戴维",
+        "date": "1909",
+        "sentence": "<mark>爱德华斯·戴维（Edgeworth David）</mark>和两名同伴到达了南磁极点附近。",
+        "mapinfo": {
+            "center": [
+                139.4,
+                -65.6
+            ],
+            "r": 4
+        }
+    },
+    {
+        "title": "Road Amundsen",
+        "name": "罗德·阿蒙森",
+        "date": "1911",
+        "sentence": "<mark>罗德·阿蒙森（Roald Amundsen）</mark>和4个同伴及18条狗将挪威国旗插上了南极点。",
+        "mapinfo": {
+            "center": [
+                0,
+                -90
+            ],
+            "r": 2
+        }
+    },
+    {
+        "title": "Douglas Mawson",
+        "name": "道格拉斯·莫森",
+        "date": "1912",
+        "sentence": "<mark>道格拉斯·莫森（Douglas Mawson）</mark>在探险新时发现了一处海岸并且在那里第一次使用了电线通讯。"
+    },
+    {
+        "title": "Hubert Wilkins",
+        "name": "哈伯特·威尔金斯",
+        "date": "1928",
+        "sentence": "英国的<mark>哈伯特·威尔金斯（Hubert Wilkins）</mark>完成了第一次的南极上空飞行。威尔金斯也成为了驾机从事南极洲探险的第一人。"
+    },
+    {
+        "title": "Richard Byrd",
+        "name": "理查德·伯德",
+        "date": "1929",
+        "sentence": "<mark>理查德·伯德（Richard Byrd）</mark>和3个同伴完成了首次飞越南极点的空中探险。"
+    },
+    {
+        "title": "Richard Byrd",
+        "name": "理查德·伯德",
+        "date": "1934",
+        "sentence": "<mark>理查德·伯德成为了第一个在南极内陆越冬的人。"
+    },
+    {
+        "title": "Mrs Mikkelsen",
+        "name": "米克尔森夫人",
+        "date": "1935",
+        "sentence": "<mark>米克尔森夫人（Mrs Mikkelsen）</mark>是第一位踏上南极大陆的女性。"
+    },
+    {
+        "title": "Lincoln Ellsworth",
+        "name": "林肯·艾尔斯沃斯",
+        "date": "1935",
+        "sentence": "美国人<mark>林肯·艾尔斯沃斯（Lincoln Ellsworth）</mark>在第三次尝试中成功地飞越了南极洲，证实了飞机可以在南极大陆进行多种项目的考察作业，并可代替长距离的雪橇进行长途考察。"
+    },
+    {
+        "title": "",
+        "name": "",
+        "date": "1947",
+        "sentence": "<mark>美国海军</mark>组织了一次 “跳岛”行动，展开了南极第一次军事探索，并第一次使用破冰船。"
+    },
+    {
+        "title": "",
+        "name": "",
+        "date": "1954",
+        "sentence": "<mark>菲利浦·洛（Phillip Law）</mark>和澳大利亚国家南极研究考察队建起了南极大陆上第一个大型的、永久性的科研基地——莫森基地。",
+        "mapinfo": {
+            "center": [
+                139.2728,
+                -89.9975
+            ],
+            "r": 2
+        }
+    },
+    {
+        "title": "",
+        "name": "",
+        "date": "1957",
+        "sentence": "“国际地球物理年”达成协议，各国科学家联合起来，大规模在南极科考、建站，是南极科学时代的正式开始。"
+    },
+    {
+        "title": "Vivian Fuchs",
+        "name": "维维安·福克斯",
+        "date": "1958",
+        "sentence": "<mark>维维安·福克斯 （Vivian Fuchs）</mark>完成了人类对南极的第一次穿越。"
+    },
+    {
+        "title": "",
+        "name": "",
+        "date": "1959",
+        "sentence": "“国际地球物理年”会议中的<mark>12个主要成员国</mark>在华盛顿签署了《南极条约》。从此，南极大陆将“只允许从事有和平目的的活动”。该条约还冻结了一切有关南极大陆的领土要求。《南极条约》于1961年起生效。"
+    }
+]
