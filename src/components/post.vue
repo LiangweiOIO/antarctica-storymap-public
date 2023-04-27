@@ -22,27 +22,27 @@ export default {
       posts: [
         {
           id: 1,
-          thumbnail: '/img/cover/one.jpg',
+          thumbnail: './img/cover/one.jpg',
           title: '案例一：南极自然概况图',
-          description: 'description 1...'
+          description: '将地图设置为故事焦点，介绍了南极自然概况。'
         },
         {
           id: 2,
-          thumbnail: '/img/cover/two.jpg',
+          thumbnail: './img/cover/two.jpg',
           title: '案例二：南极极昼/夜可视化',
-          description: 'description 2...'
+          description: '通过动画展示南极极昼极夜现象。'
         },
         {
           id: 3,
-          thumbnail: '/img/cover/three.jpg',
+          thumbnail: './img/cover/three.jpg',
           title: '案例三：南极探险时间轴',
-          description: 'description 3...'
+          description: '将地图嵌入信息表，展现南极探险关键事件。'
         },
         {
           id: 4,
-          thumbnail: '/img/cover/four.png',
+          thumbnail: './img/cover/four.png',
           title: '案例四：南极科考站地图',
-          description: 'description 4...'
+          description: '通过地图与图表联动，展现南极科考站分布与创建时间。'
         }
       ],
     }
@@ -52,7 +52,7 @@ export default {
   },
   methods: {
     goToPost(id) {
-      this.$router.push('/chapter' + id)
+      this.$router.push('./chapter' + id)
     },
   },
 

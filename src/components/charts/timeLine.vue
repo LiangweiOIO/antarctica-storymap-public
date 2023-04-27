@@ -19,10 +19,10 @@ export default {
     async mounted() {
         const _this = this;
         try {
-            let response = await axios.get('/data/adventureEvent.json');
+            let response = await axios.get('./data/adventureEvent.json');
             _this.timeline = response.data;
 
-            response = await axios.get('/data/land-110m.json');
+            response = await axios.get('./data/land-110m.json');
             _this.land110 = response.data;
 
             let dom = document.getElementById('timeline');
@@ -119,7 +119,9 @@ export default {
                 .select(id)
                 .append("svg")
                 .attr("width", width)
-                .attr("height", height);
+                .attr("height", height)
+                .style('user-select', 'none')
+                .style('-webkit-user-select', 'none');
 
             const projection = d3
                 .geoAzimuthalEquidistant()

@@ -1,7 +1,7 @@
 <template>
     <footer class="footer">
         <div class="footer-text">
-            <p>中山大学本科生毕业设计</p>
+            <p>本科生毕业设计</p>
             <p>极地科考的故事地图</p>
         </div>
         <!-- <div class="footer__logo-container">

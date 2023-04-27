@@ -43,42 +43,42 @@ export default {
             iceshelf: {},
             ice: {},
 
-            text1: '地球上的极点（未完成）',
+            text1: '南极有四个极点，即地理极点、地磁极点、寒极点和冰盖最高点。',
             text2: '南极（south pole）是根据地球的旋转方式决定的最南点。它通常表示地理上的南极区域，有一个固定的位置。按照国际上通行的概念，南纬60度以南的地区称为南极，它是南大洋及其岛屿和南极大陆的总称，总面积6500万平方公里。南极圈即南纬66°33′纬线圈，极圈内有极昼极夜现象，同时也是划分温带与寒带的界限。',
             text3: '南极辐合带是一条自然地理边界，地理位置在南纬48°~62°之间，是一个不规则的圆圈。这里是向北流动的南大洋表层水(0~300米深)与向南流动的温暖的海水相遇的地方，也是海水温度和盐度的跃变带，因此两边的海洋有特别明显的差异。我们通常自然地理上所说的南极，指的就是南极辐合带之内的区域。',
-            text4: '介绍南极地物类型。（未完成）',
+            text4: '南极大陆的98%都被厚厚的永久冰盖——南极冰盖所覆盖，其余则为裸地和海岸线。南极洲的沿海地区主要由海冰和冰架组成。南极海冰是南大洋上由海水冻结形成的冰，多属一年内冻结和消融的季节性海冰，面积随季节波动较大。冰架是指与大陆冰相连的海上大面积的固定浮冰。',
         }
     },
     async mounted() {
         const _this = this;
         try {
-            let response = await axios.get('/data/land-50m.json');
+            let response = await axios.get('./data/land-50m.json');
             _this.land50 = response.data;
 
-            response = await axios.get('/data/land-110m.json');
+            response = await axios.get('./data/land-110m.json');
             _this.land110 = response.data;
 
             // source: Orsi, AH., Harris, U. (2019) Fronts of the Antarctic Circumpolar Current - GIS data, Ver. 1, Australian Antarctic Data Centre - https://data.aad.gov.au/metadata/records/antarctic_circumpolar_current_fronts, Accessed: 2021/11
-            response = await axios.get('/data/polar-front.json');
+            response = await axios.get('./data/polar-front.json');
             _this.pf = response.data;
 
-            response = await axios.get('/data/megPoles.json');
+            response = await axios.get('./data/megPoles.json');
             _this.mp = response.data;
 
-            response = await axios.get('/data/USNIC_ANTARC_shelf_2022_merge-sim-nonproj.json');
+            response = await axios.get('./data/USNIC_ANTARC_shelf_2022_merge-sim-nonproj.json');
             // response = await axios.get('/data/bigIceBerg.json');
             _this.iceshelf = response.data;
 
-            response = await axios.get('/data/ross_wgs84.json');
+            response = await axios.get('./data/ross_wgs84.json');
             _this.iceshelf_list.push(response.data);
 
-            response = await axios.get('/data/amery_wgs84.json');
+            response = await axios.get('./data/amery_wgs84.json');
             _this.iceshelf_list.push(response.data);
 
-            response = await axios.get('/data/filchner-ronne_wgs84.json');
+            response = await axios.get('./data/filchner-ronne_wgs84.json');
             _this.iceshelf_list.push(response.data);
 
-            response = await axios.get('/data/iceedge23105.json');
+            response = await axios.get('./data/iceedge23105.json');
             _this.ice = response.data;
 
             this.initScrollama(this);
@@ -490,7 +490,7 @@ export default {
                 .attr('d', path)
                 .attr("id", "ice-edge")
                 .attr("fill", "#fff")
-                .style("opacity", 0.5)
+                .style("opacity", 0.6)
 
             svg.append('path')
                 .datum(topojson.feature(this.land50, this.land50.objects.land))
@@ -510,8 +510,8 @@ export default {
                 .attr('d', path)
                 .attr("class", "iceshelf")
                 .attr("fill", "none")
-                .attr("stroke-width", 0.8)
-                .attr("stroke", "#f2f2f2")
+                .attr("stroke-width", 1.4)
+                .attr("stroke", "#70a8d8")
 
             // 创建比例尺
             const scaleBar = geoScaleBar()
@@ -531,23 +531,20 @@ export default {
                 .call(scaleBar);
 
             this.drawIceShelf(svg, projection, path);
+            this.addLegendsToMap(svg, width);
 
             d3.select("#dragableEarth-srcoll-step3").style("display", "none");
         },
         drawPoles(svg, projection) {//修改为使用d3.geoCircle生成器
             const path = d3.geoPath(projection);
 
-            var tooltip = d3.select("body")
+            var tooltip = d3.select("#dragableEarth-srcoll-step1")
                 .append("div")
-                .attr("class", "tooltip");
+                .attr("class", "tooltip1");
 
             tooltip
                 .style("width", "50px")
-                // .style("height", "20px")
-                .style("background-color", "#fff")
-                .style("border", "1px solid #ccc")
-                .style("border-radius", "5px")
-                .style("padding", "10px");
+                .style("height", "20px")
 
             //-------地理极点---------
 
@@ -562,15 +559,15 @@ export default {
                     d3.select(this)
                         .style("stroke", "#216bc6")
                         .style("stroke-width", "4px");
-                    tooltip.html("南极点")
-                        .style("visibility", "visible");
+                    // tooltip.html("南极点")
+                    //     .style("visibility", "visible");
                 })
                 .on("mousemove", function (d) {
-                    tooltip.style("top", (d.pageY - 10) + "px")
-                        .style("left", (d.pageX + 10) + "px");
+                    // tooltip.style("top", (d.pageY - 10) + "px")
+                    //     .style("left", (d.pageX + 10) + "px");
                 })
                 .on("mouseout", function () {
-                    tooltip.style("visibility", "hidden");
+                    // tooltip.style("visibility", "hidden");
                     d3.select(this)
                         .style("stroke", "none");
                 });
@@ -708,13 +705,13 @@ export default {
             let textContent = ["Ross Ice Shelf", "Amery Ice Shelf", "Filchner-ronne Ice Shelf"];
             let id_list = ["ross", "amery", "filchner-ronne"];
 
-            var tooltip = d3.select("body")
+            var tooltip = d3.select("#dragableEarth-srcoll-step3")
                 .append("div")
-                .attr("class", "tooltip");
+                .attr("class", "tooltip2");
 
             tooltip
                 .style("width", "50px")
-                // .style("height", "20px")
+                .style("height", "20px")
                 .style("background-color", "#fff")
                 .style("border", "1px solid #ccc")
                 .style("border-radius", "5px")
@@ -730,8 +727,8 @@ export default {
                     .attr("stroke", "white")
                     .on("mouseover", function (d) {
                         d3.select(this)
-                            .style("stroke", "#fff")
-                            .style("stroke-width", "2px");
+                            .style("stroke", "blue")
+                            .style("stroke-width", "1px");
                         tooltip.html(id_list[i])
                             .style("visibility", "visible");
                     })
@@ -744,17 +741,55 @@ export default {
                         d3.select(this)
                             .style("stroke", "none");
                     });
-                screenLocation = projection(textLocation[i]);
-                svg.append("text")
-                    .attr("id", "text-" + id_list[i])
-                    // .attr("x", screenLocation[0]-(textContent[i].length / 2)*4)
-                    // .attr("y", screenLocation[1])
-                    // .text(textContent[i]);
-                    .attr("transform", "translate(" + screenLocation[0] + "," + screenLocation[1] + ")")
-                    .attr("text-anchor", "middle")
-                    .text(textContent[i]);
+                // screenLocation = projection(textLocation[i]);
+                // svg.append("text")
+                //     .attr("id", "text-" + id_list[i])
+                //     // .attr("x", screenLocation[0]-(textContent[i].length / 2)*4)
+                //     // .attr("y", screenLocation[1])
+                //     // .text(textContent[i]);
+                //     .attr("transform", "translate(" + screenLocation[0] + "," + screenLocation[1] + ")")
+                //     .attr("text-anchor", "middle")
+                //     .text(textContent[i]);
             }
-        }
+        },
+        addLegendsToMap(map, width) {
+            let legendX = width - 25;
+            let g = map
+                .append("g")
+                .attr(
+                    // position the legend on the right side of the map
+                    "transform",
+                    `translate(${legendX}, 10)`
+                )
+                .attr("text-anchor", "end");
+
+            //should probably use .data() for this but it didnt take long so who cares
+            let circleX = 0;
+            // symbols
+            g.append("circle")
+                .attr("r", 5)
+                .attr("fill", "#fff")
+                .style("opacity", 0.6)
+                .attr("transform", `translate(${circleX}, 20)`)
+                .attr("class", "legend-text");
+            g.append("circle")
+                .attr("r", 5)
+                .attr("fill", "none")
+                .attr("stroke", "#70a8d8")
+                .attr("stroke-width", "1.4px")
+                .attr("transform", `translate(${circleX}, 45)`)
+                .attr("class", "legend-text");
+
+            // labels
+            g.append("text")
+                .text("海冰")
+                .attr("transform", `translate(${circleX - 10}, 25)`)
+                .attr("class", "legend-text");
+            g.append("text")
+                .text("冰架边缘")
+                .attr("transform", `translate(${circleX - 10}, 50)`)
+                .attr("class", "legend-text");
+        },
     }
 
 }

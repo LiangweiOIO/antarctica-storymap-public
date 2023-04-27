@@ -25,13 +25,13 @@ export default {
     async mounted() {
         let _this = this;
         try {
-            let response = await axios.get('/data/land-50m.json');
+            let response = await axios.get('./data/land-50m.json');
             _this.land50 = response.data;
-            response = await axios.get('/data/land-110m.json');
+            response = await axios.get('./data/land-110m.json');
             _this.land110 = response.data;
 
             // source: Orsi, AH., Harris, U. (2019) Fronts of the Antarctic Circumpolar Current - GIS data, Ver. 1, Australian Antarctic Data Centre - https://data.aad.gov.au/metadata/records/antarctic_circumpolar_current_fronts, Accessed: 2021/11
-            response = await axios.get('/data/polar-front.json');
+            response = await axios.get('./data/polar-front.json');
             _this.polarLine = response.data;
 
             this.windowWidth = window.innerWidth;

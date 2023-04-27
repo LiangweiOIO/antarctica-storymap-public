@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // base:'/antarctica-storymap-public/',
+  base:'/antarctica-storymap-public/',
   plugins: [vue()],
   resolve: {
     alias: {

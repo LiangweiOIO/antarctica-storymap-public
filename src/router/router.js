@@ -1,36 +1,35 @@
 const routes = [
     {
-        path: '/home',
+        path: '/antarctica-storymap-public/home',
         name: 'home',
         component: () => import('@/components/home.vue'),
     }, {
-        path: '/',
+        path: '/antarctica-storymap-public/',
         name: 'home',
         component: () => import('@/components/home.vue'),
     },
-    ,
     {
-        path: '/about',
+        path: '/antarctica-storymap-public/about',
         name: 'about',
         component: () => import('@/components/maps/southPole.vue'),
     },
     {
-        path: '/chapter1',
+        path: '/antarctica-storymap-public/chapter1',
         name: 'chapter1',
         component: () => import('@/components/pages/chapterOne.vue'),
     },
     {
-        path: '/chapter2',
+        path: '/antarctica-storymap-public/chapter2',
         name: 'chapter2',
         component: () => import('@/components/pages/chapterTwo.vue'),
     },
     {
-        path: '/chapter3',
+        path: '/antarctica-storymap-public/chapter3',
         name: 'chapter3',
         component: () => import('@/components/pages/chapterThree.vue'),
     },
     {
-        path: '/chapter4',
+        path: '/antarctica-storymap-public/chapter4',
         name: 'chapter4',
         component: () => import('@/components/pages/chapterFour.vue'),
     },

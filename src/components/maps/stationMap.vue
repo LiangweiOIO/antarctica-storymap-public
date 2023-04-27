@@ -3,7 +3,7 @@
         <div id="station-map">
             <!-- <div id="mini-map"></div> -->
             <div id="time-chart"></div>
-            <div id="tooltip"></div>
+            <div id="tooltip3"></div>
         </div>
     </div>
 </template>
@@ -25,13 +25,13 @@ export default {
     async mounted() {
         let _this = this;
         try {
-            let response = await axios.get('/data/land-50m.json');
+            let response = await axios.get('./data/land-50m.json');
             _this.land50 = response.data;
 
-            response = await axios.get('/data/stations.json');
+            response = await axios.get('./data/stations.json');
             _this.stations = response.data;
 
-            response = await axios.get('/data/iceedge23105.json');
+            response = await axios.get('./data/iceedge23105.json');
             _this.ice = response.data;
 
             let mapPara_main = {
@@ -81,7 +81,7 @@ export default {
             let data = this.stations;
 
             var simulation = d3.forceSimulation(data)
-                .force("collide", d3.forceCollide().radius(1))
+                .force("collide", d3.forceCollide().radius(0.3))
                 .force("x", d3.forceX().x(function (d) { return d.Year_est; }))
                 .force("y", d3.forceY().y(innerHeight / 1.1))
                 .stop();
@@ -156,7 +156,7 @@ export default {
                 return Math.sqrt((outputMax - outputMin) * stretched + outputMin);
             }
 
-            var tooltip = d3.select("#tooltip");
+            var tooltip = d3.select("#tooltip3");
 
             // 绘制散点图
             svg
@@ -174,12 +174,12 @@ export default {
                 .on("mouseover", function (d) {
                     d3.select(this)
                         .attr("r", d => circleStretch(d.max_Pop) / 4 + 4)
-                        .attr("stroke-width", 1)
+                        .attr("stroke-width", 2)
                         .attr("stroke", "#000")
                     var data = d.target.__data__;
                     d3.selectAll(".station-" + data.id)
                         .attr("r", function (d) { return circleStretch(d.max_Pop) + 3; })
-                        .attr("stroke-width", 1)
+                        .attr("stroke-width", 2)
                         .attr("stroke", "#000")
                     tooltip.html(
                         "<strong>Location: </strong>" + data.Location + "<br/>" +
@@ -195,9 +195,11 @@ export default {
                     tooltip.style("visibility", "hidden");
                     d3.select(this)
                         .attr("r", d => circleStretch(d.max_Pop) / 4 + 2)
+                        .attr("stroke", "none")
                     var data = d.target.__data__;
                     d3.selectAll(".station-" + data.id)
                         .attr("r", function (d) { return circleStretch(d.max_Pop); })
+                        .attr("stroke", "none")
                 });
 
             return svg.node();
@@ -424,25 +426,25 @@ export default {
                     var data = d.target.__data__;
                     tooltip.html(
                         "<strong>Location: </strong>" + data.Location + "<br/>" +
-                        "<strong>lat: </strong>" + data.lat + "<br/>" +
-                        "<strong>lon: </strong>" + data.lon + "<br/>" +
+                        "<strong>Latitude: </strong>" + data.lat + "<br/>" +
+                        "<strong>Longitude: </strong>" + data.lon + "<br/>" +
                         "<strong>Country: </strong>" + data.Country + "<br/>" +
-                        "<strong>Year_est: </strong>" + data.Year_est + "<br/>" +
-                        "<strong>type: </strong>" + data.type + "<br/>" +
-                        "<strong>max population: </strong>" + data.max_Pop + "<br/>")
+                        "<strong>Yesr: </strong>" + data.Year_est + "<br/>" +
+                        "<strong>Type: </strong>" + data.type + "<br/>" +
+                        "<strong>Max Population: </strong>" + data.max_Pop + "<br/>")
                         .style("visibility", "visible");
                     d3.select(this)
                         .attr("r", function (d) { return circleStretch(d.max_Pop) + 3; })
-                        .attr("stroke-width", 1)
+                        .attr("stroke-width", 2)
                         .attr("stroke", "#000")
-                    d3.selectAll(".station-" + data.id)
-                        .attr("fill", function (d) { return color(d.type); })
-                        .attr("r", function (d) { return circleStretch(d.max_Pop) + 3; })
-                        .attr("stroke-width", 1)
-                        .attr("stroke", "#000")
+                    // d3.selectAll(".station-" + data.id)
+                    //     .attr("fill", function (d) { return color(d.type); })
+                    //     .attr("r", function (d) { return circleStretch(d.max_Pop) + 3; })
+                    //     .attr("stroke-width", 2)
+                    //     .attr("stroke", "#000")
                     d3.selectAll("#scatter-" + data.id)
                         .attr("r", d => circleStretch(d.max_Pop) / 4 + 4)
-                        .attr("stroke-width", 1)
+                        .attr("stroke-width", 2)
                         .attr("stroke", "#000")
                 })
                 .on("mousemove", function (d) {
@@ -455,12 +457,15 @@ export default {
                     d3.select(this)
                         .attr("fill", function (d) { return color(d.type); })
                         .attr("r", function (d) { return circleStretch(d.max_Pop); })
+                        .attr("stroke", "none")
                     var data = d.target.__data__;
                     d3.selectAll(".station-" + data.id)
                         .attr("fill", function (d) { return color(d.type); })
                         .attr("r", function (d) { return circleStretch(d.max_Pop); })
+                        .attr("stroke", "none")
                     d3.selectAll("#scatter-" + data.id)
                         .attr("r", d => circleStretch(d.max_Pop) / 4 + 2)
+                        .attr("stroke", "none")
                 });
         }
     }
