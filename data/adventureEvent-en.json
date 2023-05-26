@@ -1,0 +1,171 @@
+[
+    {
+        "title": "James Cook",
+        "name": "詹姆斯·库克",
+        "date": "1773",
+        "sentence": "<mark>Captain James Cook</mark> and his crew were the first to reach the Antarctic. They entered a state of complete polar night when the sunlight directly shone on the Tropic of Cancer."
+    },
+    {
+        "title": "Bellingshausen",
+        "name": "别林斯高晋",
+        "date": "1820",
+        "sentence": "Soviet explorer <mark>Bellingshausen</mark> encountered a snow-covered land located at 69°S, 2°W. According to his description, the area was filled with numerous small hills. He was fortunate to become the first person to see the Antarctic continent.",
+        "mapinfo": {
+            "center": [
+                -2,
+                -71
+            ],
+            "r": 4
+        }
+    },
+    {
+        "title": "Edward Bransfield",
+        "name": "爱德华·布兰斯菲尔德",
+        "date": "1820",
+        "sentence": "British Royal Navy dispatched <mark>Edward Bransfield</mark> to explore the South Shetland Islands and he became the first person to set eyes on the Antarctic Peninsula.",
+        "mapinfo": {
+            "center": [
+                -63,
+                -68
+            ],
+            "r": 4
+        }
+    },
+    {
+        "title": "John Davis",
+        "name": "约翰·戴维斯",
+        "date": "1821",
+        "sentence": "American seal hunter <mark>John Davis</mark> was possibly the first person to set foot on the Antarctic continent."
+    },
+    {
+        "title": "James Clark Ross",
+        "name": "詹姆斯·克拉克·罗斯",
+        "date": "1841",
+        "sentence": "<mark>James Clark Ross</mark> became the first person to traverse the Antarctic ice shelves."
+    },
+    {
+        "title": "",
+        "name": "亨利克·布尔",
+        "date": "1895",
+        "sentence": "<mark>Henrik Johan Bull</mark> and his companions landed on the Antarctic continent from Cape Adare, marking the first human landing outside of the Antarctic Peninsula. They also discovered lichens on nearby islands, representing the first findings of plants and fungi within the Antarctic Circle.",
+        "mapinfo": {
+            "center": [
+                170.23,
+                -71.28
+            ],
+            "r": 4
+        }
+    },
+    {
+        "title": "",
+        "name": "罗伯特·斯科特",
+        "date": "1902",
+        "sentence": "<mark>Robert Falcon Scott</mark> became the first person to fly over the Antarctic continent in a hydrogen balloon."
+    },
+    {
+        "title": "Edgeworth David",
+        "name": "爱德华斯·戴维",
+        "date": "1909",
+        "sentence": "<mark>Edgeworth David</mark> and two companions reached the vicinity of the South Magnetic Pole.",
+        "mapinfo": {
+            "center": [
+                139.4,
+                -65.6
+            ],
+            "r": 4
+        }
+    },
+    {
+        "title": "Road Amundsen",
+        "name": "罗德·阿蒙森",
+        "date": "1911",
+        "sentence": "<mark>Roald Amundsen</mark> and four companions, along with 18 sled dogs, planted the Norwegian flag at the South Pole.",
+        "mapinfo": {
+            "center": [
+                0,
+                -90
+            ],
+            "r": 2
+        }
+    },
+    {
+        "title": "Douglas Mawson",
+        "name": "道格拉斯·莫森",
+        "date": "1912",
+        "sentence": "<mark>Douglas Mawson</mark> discovered a coast during his exploration and utilized wireless communication for the first time in that region."
+    },
+    {
+        "title": "Hubert Wilkins",
+        "name": "哈伯特·威尔金斯",
+        "date": "1928",
+        "sentence": "British explorer <mark>Hubert Wilkins</mark> completed the first aerial flight over the Antarctic. He also became the first person to explore Antarctica using an aircraft."
+    },
+    {
+        "title": "Richard Byrd",
+        "name": "理查德·伯德",
+        "date": "1929",
+        "sentence": "<mark>Richard Byrd</mark> and three companions completed the first aerial expedition over the South Pole."
+    },
+    {
+        "title": "Richard Byrd",
+        "name": "理查德·伯德",
+        "date": "1934",
+        "sentence": "<mark>Richard Byrd</mark> was the first person to winter in the interior of Antarctica."
+    },
+    {
+        "title": "Mrs Mikkelsen",
+        "name": "米克尔森夫人",
+        "date": "1935",
+        "sentence": "<mark>Mrs. Ingrid Christensen Mikkelsen</mark> became the first woman to set foot on the Antarctic continent."
+    },
+    {
+        "title": "Lincoln Ellsworth",
+        "name": "林肯·艾尔斯沃斯",
+        "date": "1935",
+        "sentence": "American <mark>Lincoln Ellsworth</mark> successfully crossed Antarctica on his third attempt, demonstrating that aircraft could be used for various Antarctic expeditions, replacing long-distance sledging.",
+        "mapinfo": {
+            "center": [
+                139.2728,
+                -89.9975
+            ],
+            "r": 2
+        }
+    },
+    {
+        "title": "",
+        "name": "",
+        "date": "1947",
+        "sentence": "The <mark>United States Navy</mark> conducted Operation Highjump, the first major military exploration of Antarctica, and also utilized an icebreaker for the first time."
+    },
+    {
+        "title": "",
+        "name": "",
+        "date": "1954",
+        "sentence": "<mark>Phillip Law</mark> and the Australian National Antarctic Research Expeditions (ANARE) established the first large permanent research base, Mawson Station, on the Antarctic continent.",
+        "mapinfo": {
+            "center": [
+                139.2728,
+                -89.9975
+            ],
+            "r": 2
+        }
+    },
+    {
+        "title": "",
+        "name": "",
+        "date": "1957",
+        "sentence": "During the International Geophysical Year (IGY), numerous countries jointly conducted large-scale scientific exploration and established research stations in Antarctica, marking the official beginning of the Antarctic scientific era."
+    },
+    {
+        "title": "Vivian Fuchs",
+        "name": "维维安·福克斯",
+        "date": "1958",
+        "sentence": "<mark>Vivian Fuchs</mark> accomplished the first trans-Antarctic crossing by humans."
+    },
+    {
+        "title": "",
+        "name": "",
+        "date": "1959",
+        "sentence": "During the International Geophysical Year (IGY) conference, the representatives of the <mark>12 major member nations</mark> signed the Antarctic Treaty in Washington. Since then, the Antarctic continent is to be used for peaceful purposes only. The treaty also suspended all territorial claims over Antarctica. The Antarctic Treaty came into effect in 1961."
+    }
+]
